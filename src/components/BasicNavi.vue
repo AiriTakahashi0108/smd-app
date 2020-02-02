@@ -1,7 +1,7 @@
 <template>
   <div class="navWrapper">
     <aside>
-      <header>
+      <header class="header">
         <img class="logo-1" src='~/assets/img/smd-logo_1.png' alt='SMDボーカル教室-ロゴ'>
         <img class="logo-2" src='~/assets/img/smd-logo_2.png' alt='SMDボーカル教室-ロゴ'>
       </header>
@@ -39,10 +39,12 @@
     height: 100px;
     width: 180px;
     display: flex;
-    justify-content: center;
-
   }
 
+  .header{
+    display: flex;
+    flex-direction: column;
+  }
   .logo-1 {
     transform: scale(0.8);
   }

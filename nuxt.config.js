@@ -46,6 +46,7 @@ export default {
   */
   build: {
     extractCSS: true,
+    hardSource: true,
     postcss: {
       plugins: [
         require('postcss-preset-env')({
@@ -56,10 +57,6 @@ export default {
         require('postcss-custom-properties')(),
         require('postcss-nested')()
       ]
-    },
-    extend(config, ctx) {
-      const HardSourceWebpackPlugin = require('hard-source-webpack-plugin')
-      config.plugins.push(new HardSourceWebpackPlugin())
     },
   },
   srcDir: 'src/'
