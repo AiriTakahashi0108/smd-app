@@ -8,14 +8,12 @@
 </template>
 
 <script>
-  import BasicHeader from '@/components/BasicHeader.vue'
   import BasicNavi from '@/components/BasicNavi'
 
   export default {
     name: 'default',
     components: {
       BasicNavi,
-      BasicHeader
     },
     head: {
       link: [
@@ -37,7 +35,6 @@
   .main-contents {
     display: flex;
     height: 100vh;
-    border-top: 1px solid gray;
   }
 
   :root {
@@ -45,6 +42,7 @@
 
     --background-wihte: white;
     --background-gray-light: #c7c7c7;
+    --background-gray-dark: #2c2c2c;
 
     --color-red: red;
 
@@ -56,6 +54,8 @@
     --text-color-gray-dark: #2d2d2d;
     --text-color-gray: #424242;
     --text-color-gray-ligth: #c9c9c9;
+
+    --padding-middle: 30px;
   }
 
   a, a:visited, a:link, a:hover {

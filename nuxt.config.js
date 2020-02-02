@@ -46,7 +46,7 @@ export default {
   */
   build: {
     extractCSS: true,
-    hardSource: true,
+    hardSource: false,
     postcss: {
       plugins: [
         require('postcss-preset-env')({
