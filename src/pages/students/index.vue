@@ -7,16 +7,22 @@
 </template>
 
 <script>
+  import ContentsContainer from '@/components/ContentsContainer'
+  import mapGetters from 'vuex';
 
   export default {
     data() {
       return {}
     },
-    computed: {
-      clientList() {
-        return this.$store.state.clientList.clientList
-      }
+    components: {
+      ContentsContainer,
     },
+    computed: {
+      ...mapGetters({
+        studentsList: 'students/studentsList',
+        register: 'students/register',
+      })
+    }
   }
 </script>
 

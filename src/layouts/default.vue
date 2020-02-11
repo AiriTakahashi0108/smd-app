@@ -42,7 +42,7 @@
   :root {
     --basic-font-family: 'Noto Sans JP', sans-serif;
 
-    --background-wihte: white;
+    --background-white: white;
     --background-gray-light: #c7c7c7;
     --background-gray-dark: #2c2c2c;
 
