@@ -1,8 +1,6 @@
 <template>
   <div class="instructorsWrapper">
-    <contentsContainer>
       講師情報
-    </contentsContainer>
   </div>
 </template>
 

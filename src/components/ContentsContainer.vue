@@ -6,7 +6,9 @@
 
 <style lang="postcss" scoped>
   .contentsWrapper {
-    padding: var(--padding-middle);
     width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    padding: var(--padding-middle);
   }
 </style>

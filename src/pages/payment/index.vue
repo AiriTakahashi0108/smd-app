@@ -1,8 +1,6 @@
 <template>
   <div class="paymentWrapper">
-    <contentsContainer>
       aaaaaaa
-    </contentsContainer>
   </div>
 </template>
 

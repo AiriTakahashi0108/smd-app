@@ -9,11 +9,14 @@
 
 <script>
   import BasicNavi from '@/components/BasicNavi'
+  import ContentsContainer from '@/components/ContentsContainer'
+
 
   export default {
     name: 'default',
     components: {
       BasicNavi,
+      ContentsContainer
     },
     head: {
       link: [

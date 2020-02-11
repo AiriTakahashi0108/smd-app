@@ -15,5 +15,6 @@
     border-radius: 5px;
     background: var(--background-white);
     padding: var(--padding-middle);
+    margin-bottom: var(--padding-middle);
   }
 </style>
