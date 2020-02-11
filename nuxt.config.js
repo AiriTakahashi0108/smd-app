@@ -24,14 +24,14 @@ export default {
   */
   css: [
     'ant-design-vue/dist/antd.css',
-    '~/assets/styles/customVCalendarStyles.css'
+    '~/assets/styles/customFullCalendarStyles.css'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
     '@/plugins/ant-design-vue.js',
-    '@/plugins/v-calendar.js'
+    '@/plugins/full-calendar.js'
   ],
   /*
   ** Nuxt.js dev-modules

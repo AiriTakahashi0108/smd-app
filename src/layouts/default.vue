@@ -1,8 +1,8 @@
 <template>
   <div class="wrapper">
+    <BasicNavi/>
     <main class="main-contents">
-      <BasicNavi />
-      <nuxt />
+      <nuxt/>
     </main>
   </div>
 </template>
@@ -31,10 +31,12 @@
   .wrapper {
     overflow: hidden;
     font-family: var(--basic-font-family);
-  }
-  .main-contents {
     display: flex;
     height: 100vh;
+  }
+
+  .main-contents {
+    width: 100%;
   }
 
   :root {

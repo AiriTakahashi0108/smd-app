@@ -1,8 +1,8 @@
 <template>
   <div class='headerWrapper'>
-    <ul v-for="(naviLink, index) in headNaviLink" :key="index" class="link-list">
-      <li class="link-item">
-        <nuxt-link to="naviLink.href">{{naviLink.name}}</nuxt-link>
+    <ul class="link-list">
+      <li v-for="(naviLink, index) in headNaviLink" :key="index" class="link-item">
+        <nuxt-link :to="naviLink.href">{{naviLink.name}}</nuxt-link>
       </li>
     </ul>
   </div>
@@ -26,13 +26,13 @@
 <style lang="postcss" scoped>
 
   .headerWrapper {
-    padding: var(--padding-middle)
+    padding: var(--padding-middle);
+    width: 100%;
   }
 
   .link-list {
     list-style: none;
     display: flex;
-    flex-direction: initial;
   }
 
   .link-item {

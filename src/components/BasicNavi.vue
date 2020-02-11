@@ -10,11 +10,11 @@
           <a-icon type="calendar" class="nav-icon"/>
           スケジュール
         </nuxt-link>
-        <nuxt-link :class="['nav-item', {'--isActive' : $nuxt.$route.path==='/users'}]" to="/users">
+        <nuxt-link :class="['nav-item', {'--isActive' : $nuxt.$route.path==='/instructors'}]" to="/instructors">
           <a-icon type="user" class="nav-icon"/>
           従業員情報
         </nuxt-link>
-        <nuxt-link :class="['nav-item', {'--isActive' : $nuxt.$route.path==='/client'}]" to="/client">
+        <nuxt-link :class="['nav-item', {'--isActive' : $nuxt.$route.path==='/students'}]" to="/students">
           <a-icon type="team" class="nav-icon"/>
           生徒情報
         </nuxt-link>
