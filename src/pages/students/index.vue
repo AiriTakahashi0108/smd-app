@@ -1,27 +1,25 @@
 <template>
-  <div class="studentsWrapper">
-    <ContentsContainer>
-      <div>kkkkk</div>
-    </ContentsContainer>
+  <div class="instructorsWrapper">
+    <contentsContainer>
+      <Paper>
+        生徒
+      </Paper>
+    </contentsContainer>
   </div>
 </template>
 
 <script>
   import ContentsContainer from '@/components/ContentsContainer'
-  import mapGetters from 'vuex';
+  import Paper from '@/components/Paper'
 
   export default {
     data() {
-      return {}
+      return {
+      }
     },
     components: {
       ContentsContainer,
-    },
-    computed: {
-      ...mapGetters({
-        studentsList: 'students/studentsList',
-        register: 'students/register',
-      })
+      Paper
     }
   }
 </script>

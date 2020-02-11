@@ -1,7 +1,7 @@
 <template>
   <div class="instructorsWrapper">
     <contentsContainer>
-      aaaaaaa
+      講師情報
     </contentsContainer>
   </div>
 </template>
@@ -19,6 +19,4 @@
       ContentsContainer,
     }
   }
-
-
 </script>

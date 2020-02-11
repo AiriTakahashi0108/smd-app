@@ -37,6 +37,7 @@
 
   .main-contents {
     width: 100%;
+    background: linear-gradient(#96c4ff, #7e89fb);
   }
 
   :root {
