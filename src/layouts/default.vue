@@ -62,6 +62,8 @@
     --text-color-gray-ligth: #c9c9c9;
 
     --padding-middle: 30px;
+    --padding-thin: 15px;
+
   }
 
   a, a:visited, a:link, a:hover {

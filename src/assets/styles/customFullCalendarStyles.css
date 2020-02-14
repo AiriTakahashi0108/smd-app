@@ -1,1 +1,10 @@
+.fc-toolbar {
+  margin: 0;
+  background: var(--background-white);
+  padding: var(--padding-thin);
+  border-radius: 3px;
+}
 
+.fc-view-container {
+  background: var(--background-white);
+}

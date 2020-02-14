@@ -24,7 +24,8 @@ export default {
   */
   css: [
     'ant-design-vue/dist/antd.css',
-    '~/assets/styles/customFullCalendarStyles.css'
+    '~/assets/styles/customFullCalendarStyles.css',
+    '~/assets/styles/customAntDesignStyles.css'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -46,7 +47,7 @@ export default {
   */
   build: {
     extractCSS: true,
-    hardSource: true,
+    hardSource: false,
     postcss: {
       plugins: [
         require('postcss-preset-env')({

@@ -5,7 +5,7 @@
     :header="calendarHeader"
     :weekends="calendarWeekends"
     :plugins="calendarPlugins"
-    :events="calendarEvents"
+    :eventSources="eventSources"
     @dateClick="handleDateClick"
   />
 </template>
@@ -35,6 +35,33 @@
           timeGridPlugin,
           interactionPlugin
         ],
+        eventSources: [
+
+          // your event source
+          {
+            events: [ // put the array in the `events` property
+              {
+                title  : 'event1',
+                start  : '2020-01-01'
+              },
+              {
+                title  : '内山',
+                start  : '2020-02-09T13:30:00',
+                end    : '2020-02-09T14:30:00'
+              },
+              {
+                title  : 'えりえり',
+                start  : '2020-02-09T12:30:00',
+                end    : '2020-02-09T13:30:00'
+              }
+            ],
+            color: 'black',     // an option!
+            textColor: 'yellow' // an option!
+          }
+
+          // any other event sources...
+
+        ]
       }
     },
     components: {

@@ -1,5 +1,6 @@
 <template>
   <div class='headerWrapper'>
+
 <!--    <ul class="link-list">-->
 <!--      <li v-for="(naviLink, index) in headNaviLink" :key="index" class="link-item">-->
 <!--        <nuxt-link :to="naviLink.href">{{naviLink.name}}</nuxt-link>-->
