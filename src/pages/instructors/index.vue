@@ -55,7 +55,7 @@
   import CardHeader from '@/components/CardHeader'
   import Paper from '@/components/Paper'
   import {mapGetters} from 'vuex';
-  import _ from 'lodash';
+  import _ from 'lodash'
 
   export default {
     data() {
