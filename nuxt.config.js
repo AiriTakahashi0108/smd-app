@@ -24,7 +24,7 @@ export default {
   */
   css: [
     'ant-design-vue/dist/antd.css',
-    '~/assets/styles/customFullCalendarStyles.css',
+    '~/assets/styles/customVueCalStyles.css',
     '~/assets/styles/customAntDesignStyles.css'
   ],
   /*
@@ -32,7 +32,7 @@ export default {
   */
   plugins: [
     '@/plugins/ant-design-vue.js',
-    '@/plugins/full-calendar.js'
+    '@/plugins/vue-cal.js'
   ],
   /*
   ** Nuxt.js dev-modules

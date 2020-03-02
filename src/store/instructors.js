@@ -13,7 +13,8 @@ const INSTRUCTORS = {
       lessonReservation: [
         '2020年1月31日18時30分〜1h'
       ],
-      remarks: ``
+      remarks: ``,
+      class:'vuecal--orange'
     },
     N2: {
       firstName: '永塚',
@@ -29,6 +30,8 @@ const INSTRUCTORS = {
       lessonReservation: [
         '2020年1月31日18時30分〜1h'
       ],
+      remarks: ``,
+      class:'vuecal--skyblue'
     },
   },
   register: {

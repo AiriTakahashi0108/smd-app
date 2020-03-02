@@ -104,7 +104,7 @@
       },
       threeDigitID(id) {
         id = this.sliceID(id)
-        return ('000' + id).slice(-3)
+        return _.padStart(id, 2, '0')
       },
       fullName(student) {
         return student.firstName + ' ' + student.lastName

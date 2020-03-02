@@ -38,7 +38,7 @@
 <style lang="postcss" scoped>
 
   .navWrapper {
-    width: 200px;
+    width: var(--nav-wrapper-width);
     height: 100vh;
     display: flex;
     flex-direction: column;

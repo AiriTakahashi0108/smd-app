@@ -46,6 +46,8 @@
   :root {
     --basic-font-family: 'Noto Sans JP', sans-serif;
 
+    --nav-wrapper-width: 200px;
+
     --background-white: white;
     --background-gray-light: #c7c7c7;
     --background-gray-dark: #2c2c2c;
