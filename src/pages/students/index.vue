@@ -7,7 +7,7 @@
           <p class="card-header">
             <span class="card-header__id">{{ threeDigitID(id) }}</span>
             <span class="card-header__name">{{ fullName(student) }}</span>
-            <span  class="card-header__reading">({{ fullNameReading(student) }})</span>
+            <span class="card-header__reading">({{ fullNameReading(student) }})</span>
           </p>
           <a-button>編集</a-button>
         </CardHeader>

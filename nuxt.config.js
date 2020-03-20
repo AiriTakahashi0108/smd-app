@@ -15,6 +15,8 @@ export default {
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
     ]
   },
+
+  srcDir: 'src/',
   /*
   ** Customize the progress-bar color
   */
@@ -26,13 +28,16 @@ export default {
     'ant-design-vue/dist/antd.css',
     '~/assets/styles/customVueCalStyles.css',
     '~/assets/styles/customAntDesignStyles.css'
+
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/ant-design-vue.js',
-    '@/plugins/vue-cal.js'
+    '@/plugins/ant-design-vue',
+    '@/plugins/vue-cal',
+    '@/plugins/moment',
+    { src: '~/plugins/vue-cal.js', mode: 'client' }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -41,7 +46,9 @@ export default {
   /*
   ** Nuxt.js modules
   */
-  modules: [],
+  modules: [
+    ['@nuxtjs/moment', ['ja']],
+  ],
   /*
   ** Build configuration
   */
@@ -60,5 +67,4 @@ export default {
       ]
     },
   },
-  srcDir: 'src/'
 }

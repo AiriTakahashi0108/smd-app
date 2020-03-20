@@ -13,22 +13,26 @@
       :split-days="splitDays"
       min-split-width="130"
     >
-      <template v-slot:cell-content="{ cell, view, events }" >
-        <p>{{cell.content}}</p>
-        <div v-for="(event, index) in events" :class="['vuecal__cell-content', event.classes]">
-          <template v-if="view.id === 'month' && index === 0 || event.title !== events[index - 1].title">
-            <span class="vuecal__cell-date">{{event.title}}</span>
-            <span class="vuecal__cell-events-count">{{lessonCount(event.title, events)}}</span>
-          </template>
-        </div>
+      <template v-slot:cell-content="{ cell, view, events }">
+        <template v-if="view.id === 'month'">
+          <p>{{cell.content}}</p>
+          <h1>{{ moment('2019-04-01').isValid() }}</h1>
+          <div v-for="(event, index) in events" :class="['vuecal__cell-content', event.classes]">
+            <template v-if="index === 0 || event.title !== events[index - 1].title">
+              <span class="vuecal__cell-date">{{event.title}}</span>
+              <span class="vuecal__cell-date">{{lessonStartTime(event.title, events)}}</span>
+              <span class="vuecal__cell-events-count">{{lessonCount(event.title, events)}}</span>
+            </template>
+          </div>
+        </template>
       </template>
     </vue-cal>
   </div>
 </template>
 
 <script>
-  import VueCal from 'vue-cal'
-  import {mapGetters} from 'vuex';
+  // import VueCal from 'vue-cal'
+  import {mapGetters} from 'vuex'
   import 'vue-cal/dist/i18n/ja.js'
 
   import _ from 'lodash'
@@ -57,8 +61,8 @@
         lessonData: {
           N1: [
             {
-              start: '2020-02-25',
-              end: '2020-02-25',
+              start: '2020-02-05 10:30',
+              end: '2020-02-05 11:30',
               content: 'レッスン',
               contentFull: '備考:月謝もらってください',
               allDay: true
@@ -77,8 +81,8 @@
               split: 2,
             },
             {
-              start: '2020-02-26 10:30',
-              end: '2020-02-26 11:30',
+              start: '2020-02-26 16:30',
+              end: '2020-02-26 17:30',
               content: '内山',
               split: 2,
             },
@@ -109,11 +113,15 @@
       },
     },
     methods: {
-      dayInstructors(events) {
-        return _.uniq(_.map(events, function(event){ return event.title }) )
+      instructorsLessons(instructor, events) {
+        return _.filter(events, function(event) { return  event.title === instructor })
       },
       lessonCount(instructor, events) {
-        return _.filter(events, function(event) { return  event.title === instructor }).length
+        return this.instructorsLessons(instructor, events).length
+      },
+      lessonStartTime(instructor, events) {
+        const lessonStartArr = _.map(this.instructorsLessons(instructor, events), function(lesson) { return lesson.start })
+        return lessonStartArr
       }
     }
   }

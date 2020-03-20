@@ -1,0 +1,56 @@
+.vuecal {
+  background: white;
+  width: calc(100vw - var(--nav-wrapper-width) - var(--padding-middle) * 2)
+}
+
+.vuecal__cell-date {
+  min-height: 100px;
+}
+
+.vuecal--orange {
+  background-color: orange;
+  border: 1px solid rgb(233, 116, 17);
+  color: #fff;
+}
+
+.vuecal--skyblue {
+  background-color: skyblue;
+  border: 1px solid rgb(35, 140, 233);
+  color: #fff;
+}
+
+.vuecal__flex .vuecal__cells .week-view {
+  overflow: scroll;
+}
+
+.vuecal__cell-split.a-st {
+  border: 1px solid #ffbcff;
+  box-sizing: border-box;
+  margin: 0 1px;
+}
+.vuecal__cell-split.b-st {
+  border: 1px solid #aaecff;
+  box-sizing: border-box;
+  margin: 0 1px;
+}
+
+.month-view .vuecal__cell {
+  padding: 10px;
+  min-height: 1200px;
+  align-items: baseline;
+}
+
+/*オリジナルの月カレンダースタイル*/
+.month-view .vuecal__cell-content{
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.month-view .vuecal__cell-date {
+
+}
+
+.month-view .vuecal__cell-events-count {
+  position: static;
+}
